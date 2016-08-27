@@ -1,0 +1,5 @@
+<!ELEMENT buch (kapitel+)>
+<!ELEMENT kapitel (absatz+)>
+<!ELEMENT absatz (#PCDATA | wichtig | unwichtig)*>
+<!ELEMENT wichtig (#PCDATA)>
+<!ELEMENT unwichtig (#PCDATA)>

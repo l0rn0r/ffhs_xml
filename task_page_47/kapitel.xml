@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE buch SYSTEM "kapitel.dtd">
+
+<buch>
+    <kapitel>
+        <absatz>
+            Dies ist ein Absatz
+            mit etwas <wichtig>wichtigem</wichtig>
+            und etwas <unwichtig>unwichtigem</unwichtig>
+        </absatz>
+        <absatz>
+            Dies ist ein Absatz
+            mit etwas <wichtig>wichtigem</wichtig>
+            und nochmal etwas <wichtig>wichtigem</wichtig>
+        </absatz>
+    </kapitel>
+    <kapitel>
+        <!-- leerer absatz -->
+        <absatz></absatz>
+    </kapitel>
+</buch>
