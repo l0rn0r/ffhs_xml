@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE person [
+    <!ELEMENT person (name, vorname)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT vorname (#PCDATA)>
+]>
+
+<person>
+    <name>Moolenar</name>
+    <vorname>Bram</vorname>
+</person>
