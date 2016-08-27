@@ -1,4 +1,0 @@
-<!ELEMENT cats (cat+)>
-<!ELEMENT cat (name)>
-<!ELEMENT name (#PCDATA)>
-

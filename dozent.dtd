@@ -1,0 +1,5 @@
+<!ELEMENT dozent (name, vorname, titel)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT vorname (#PCDATA)>
+<!ELEMENT titel (#PCDATA)>
+

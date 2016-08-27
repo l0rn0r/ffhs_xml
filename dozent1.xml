@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dozent SYSTEM "dozent.dtd">
+
+<dozent>
+    <name>Maier</name>
+    <vorname>Fritz</vorname>
+    <titel>Prof.</titel>
+</dozent>
+
