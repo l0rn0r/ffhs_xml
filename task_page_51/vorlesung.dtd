@@ -1,0 +1,7 @@
+<!ELEMENT vorlesung (titel, semester, beschreibung?)>
+<!ATTLIST vorlesung
+            beginn NMTOKEN #REQUIRED
+            typ (Pflicht|Wahlpflicht) #REQUIRED>
+<!ELEMENT titel (#PCDATA)>
+<!ELEMENT semester (#PCDATA)>
+<!ELEMENT beschreibung (#PCDATA)>
