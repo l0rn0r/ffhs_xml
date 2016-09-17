@@ -1,0 +1,16 @@
+<!ELEMENT fb (dozentenliste, vorlesungsliste)>
+<!ELEMENT dozentenliste (dozent+)>
+<!ELEMENT dozent (name, vorname)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT vorname (#PCDATA)>
+<!ATTLIST dozent did ID #REQUIRED>
+
+<!ELEMENT vorlesungsliste (vorlesung+)>
+<!ELEMENT vorlesung (titel, semester, beschreibung)>
+<!ELEMENT titel (#PCDATA)>
+<!ELEMENT semester (#PCDATA)>
+<!ELEMENT beschreibung (#PCDATA|em)*>
+<!ELEMENT em (#PCDATA)>
+<!ATTLIST vorlesung
+    vid ID #REQUIRED
+    did IDREF #REQUIRED>
