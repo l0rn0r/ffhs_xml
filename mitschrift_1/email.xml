@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE email SYSTEM "email.dtd">
+
+<email>
+
+    <absender>x@y.ch</absender>
+    <empfaenger>y@z.ch</empfaenger>
+    <empfaenger typ="cc">some_cc@y.ch</empfaenger>
+    <empfaenger typ="bcc">some_bcc@y.ch</empfaenger>
+
+    <betreff>Eine E-Mail</betreff>
+    <inhalt>
+        Hallo
+
+        Ich bin der Inhalt
+
+        mfg
+    </inhalt>
+
+    <anlage name="file1.txt">BASE64CONTENT</anlage>
+    <anlage name="file2.txt">BASE64CONTENT</anlage>
+</email>

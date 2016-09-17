@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<kundenliste>
+    <kunde>
+        <name>Meier</name>
+        <vorname>Hans</vorname>
+        <konto nummer="1234">
+            <guthaben>3011</guthaben>
+        </konto>
+        <konto nummer="5678">
+            <guthaben>1001</guthaben>
+        </konto>
+    </kunde>
+    <kunde>
+        <name>Meier</name>
+        <vorname>Fritz</vorname>
+        <konto nummer="1011">
+            <guthaben>42</guthaben>
+        </konto>
+        <konto nummer="1213">
+            <guthaben>1200</guthaben>
+        </konto>
+    </kunde>
+</kundenliste>

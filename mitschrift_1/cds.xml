@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE cd-collection SYSTEM "cds.dtd">
+
+<cd-collection>
+    <artists>
+        <artist id="pj">Pearl Jam</artist>
+        <artist id="jj">Janis Joplin</artist>
+    </artists>
+    <cds>
+        <cd artist="pj" releasedate="23.4.1984">Ten</cd>
+        <cd artist="pj" releasedate="21.5.1992">Vs.</cd>
+        <cd artist="jj" releasedate="1.1.1968">Pearl</cd>
+    </cds>
+</cd-collection>

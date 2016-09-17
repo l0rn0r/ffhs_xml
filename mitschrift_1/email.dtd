@@ -1,0 +1,8 @@
+<!ELEMENT email (absender, empfaenger+, betreff, inhalt, anlage*)>
+<!ELEMENT absender (#PCDATA)>
+<!ELEMENT empfaenger (#PCDATA)>
+<!ATTLIST empfaenger typ (cc|bcc) #IMPLIED>
+<!ELEMENT betreff (#PCDATA)>
+<!ELEMENT inhalt (#PCDATA)>
+<!ELEMENT anlage (#PCDATA)>
+<!ATTLIST anlage name CDATA #REQUIRED>

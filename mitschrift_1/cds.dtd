@@ -1,0 +1,10 @@
+<!ELEMENT cd-collection (artists, cds)>
+
+<!ELEMENT artists (artist*)>
+<!ELEMENT artist (#PCDATA)>
+<!ATTLIST artist id ID #REQUIRED>
+
+<!ELEMENT cds (cd*)>
+<!ELEMENT cd (#PCDATA)>
+<!ATTLIST cd releasedate NMTOKEN #IMPLIED
+             artist IDREF #REQUIRED>

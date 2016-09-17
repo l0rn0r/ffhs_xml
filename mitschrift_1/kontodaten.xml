@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<konto nummer="1234">
+    <name>Meier</name>
+    <vorname>Hans</vorname>
+    <guthaben>3011</guthaben>
+</konto>
