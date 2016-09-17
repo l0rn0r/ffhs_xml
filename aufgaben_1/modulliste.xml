@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE schule SYSTEM "modulliste.dtd">
+
+<schule>
+    <modulliste>
+
+        <modul kuerzel="m1">
+            <modul-name>Modul One</modul-name>
+            <studiengang>BSC INF</studiengang>
+            <studiengang>BSC WI</studiengang>
+        </modul>
+
+        <modul kuerzel="m2">
+            <modul-name>Modul Two</modul-name>
+            <studiengang>BSC INF</studiengang>
+            <studiengang>BSC WI</studiengang>
+        </modul>
+
+    </modulliste>
+
+    <personen>
+        <dozent geschlecht="m">
+            <name>Dozent</name>
+            <vorname>Hans</vorname>
+            <adresse>xxx</adresse>
+            <geburtsdatum>1.1.1970</geburtsdatum>
+            <ahv-nummer>1.2.3.4.5</ahv-nummer>
+            <unterrichtet>m1</unterrichtet>
+            <unterrichtet>m2</unterrichtet>
+        </dozent>
+        <student geschlecht="m">
+            <name>Student</name>
+            <vorname>Hans</vorname>
+            <adresse>xxx</adresse>
+            <geburtsdatum>1.1.1970</geburtsdatum>
+            <ahv-nummer>1.2.3.4.5</ahv-nummer>
+            <pruefungsnote modul="m1" datum="13.01.2016">5</pruefungsnote>
+            <pruefungsnote modul="m2" datum="13.01.2016">3</pruefungsnote>
+        </student>
+    </personen>
+</schule>
