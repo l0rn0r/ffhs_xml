@@ -1,0 +1,48 @@
+<!ENTITY % person.content "name, vorname, adresse">
+<!ENTITY % person.attr   "geburtsdatum NMTOKEN #REQUIRED
+                          ahvnr NMTOKEN #REQUIRED
+                          gender (m|w) #REQUIRED">
+
+<!ELEMENT schule (modulliste, personenverzeichnis, studiengangliste)>
+
+<!ELEMENT modulliste (modul+)>
+<!ELEMENT modul EMPTY>
+<!ATTLIST modul
+    mid         ID      #REQUIRED
+    modulname   CDATA   #REQUIRED
+    mkuerzel    CDATA   #REQUIRED
+    did         IDREFS  #REQUIRED
+    sgid        IDREFS  #REQUIRED
+>
+
+<!ELEMENT personenverzeichnis (dozierendeliste, studierendeliste)>
+<!ELEMENT dozierendeliste (dozent+)>
+<!ELEMENT dozent (%person.content;)>
+<!ATTLIST dozent
+    did     ID          #REQUIRED
+    %person.attr;
+    mid     IDREFS      #IMPLIED
+>
+<!ELEMENT studierendeliste (student+)>
+<!ELEMENT student (%person.content;, modulpruefung*)>
+<!ATTLIST student
+    sid     ID          #REQUIRED
+    %person.attr;
+    mid     IDREFS      #IMPLIED
+    sgid    IDREFS      #REQUIRED
+>
+<!ELEMENT modulpruefung EMPTY>
+<!ATTLIST modulpruefung
+    mid         IDREF       #REQUIRED
+    datum       NMTOKEN     #REQUIRED
+    note        NMTOKEN     #REQUIRED
+    bestanden   (Ja|Nein)   #REQUIRED
+>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT vorname (#PCDATA)>
+<!ELEMENT adresse (#PCDATA)>
+
+
+<!ELEMENT studiengangliste (studiengang*)>
+<!ELEMENT studiengang (#PCDATA)>
+<!ATTLIST studiengang sgid  ID  #REQUIRED>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE schule SYSTEM "schule.dtd">
+
+<schule>
+    <modulliste>
+        <modul mid="m1" modulname="Online Einführung Mathematik" mkuerzel="OEM" did="d1" sgid="BSC INF"/>
+        <modul mid="m2" modulname="Objektorientiertes Programmieren" mkuerzel="OOP" did="d2" sgid="BSC INF"/>
+    </modulliste>
+
+    <personenverzeichnis>
+        <dozierendeliste>
+            <dozent did="d1" geburtsdatum="12.03.1963" ahvnr="758-203-394-383" gender="m" mid="m1">
+                <name>Meyer</name>
+                <vorname>Hans</vorname>
+                <adresse>Dorfstrasse 95, 3065 Hinterfultigen</adresse>
+            </dozent>
+            <dozent did="d2" geburtsdatum="29.08.1972" ahvnr="765-273-323-546" gender="w" mid="m2, m1">
+                <name>Hubacher</name>
+                <vorname>Elisabeth</vorname>
+                <adresse>Gerechtigkeitsgasse 75, 3007 Bern</adresse>
+            </dozent>
+        </dozierendeliste>
+        <studierendeliste>
+            <student sid="s1" geburtsdatum="24.02.1993" ahvnr="846-223-645-457" gender="m" mid="m2" sgid="BSC INF">
+                <name>Bächler</name>
+                <vorname>Samuel</vorname>
+                <adresse>Mittelstr. 4, 3012 Bern</adresse>
+                <modulpruefung mid="m1" datum="29.05.2015" note="5.5" bestanden="Ja"/>
+            </student>
+        </studierendeliste>
+    </personenverzeichnis>
+
+    <studiengangliste>
+        <studiengang sgid="BSC INF">Bachelor Informatik</studiengang>
+        <studiengang sgid="BSC WI">Bachelor Wirtschaftsinformatik</studiengang>
+    </studiengangliste>
+</schule>
